@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+          crossorigin="anonymous">
+    <title>Title</title>
+</head>
+<body>
+<table aria-setsize="10" class="table table-bordered table-striped">
+    <thead class="thead-dark">
+    <tr>
+        <th>Id No.</th>
+        <th>Title</th>
+        <th>Author</th>
+    </tr>
+    </thead>
+
+     <tr th:each="book: ${books}">
+
+        <td th:text="${book.id}"></td>
+
+        <td th:text="${book.title}"/></td>
+
+        <td th:text="${book.author}"/>
+    </tr>
+    <tbody>
+
+    </tbody>
+
+</table>
+</body>
+</html>
