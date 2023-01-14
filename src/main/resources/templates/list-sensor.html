@@ -43,10 +43,10 @@
         </div>
 
         <div class="form-outline w-25">
-            <form class="d-flex" role="search" action="/search" method="post">
+            <form class="d-flex" role="search" action="/searchByName" method="get">
                 <input type="search" class="form-control rounded" placeholder="enter text to search" aria-label="Search"
-                       aria-describedby="search-addon"/>
-                <button style="float: right" type="button" class="btn btn-outline-primary">
+                       aria-describedby="search-addon" name="searchName"/>
+                <button style="float: right" type="submit" class="btn btn-outline-primary">
                     <span class='glyphicon glyphicon-search'/>
                     Search
                 </button>
@@ -171,6 +171,7 @@
             </ul>
             <br>
         </div>
+        <p class="text-danger warning" th:if="${searchWarning}" th:text="${searchWarning}"></p>
     </div>
 </center>
 </body>

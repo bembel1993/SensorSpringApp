@@ -13,5 +13,7 @@ public interface SensorDao {
 
     void saveSensor(Sensor sensor);
 
+    public List<Sensor> searchByName(String searchName);
+
     public int save(Sensor sensor);
 }
