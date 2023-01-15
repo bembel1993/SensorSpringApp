@@ -14,7 +14,7 @@ ____
 #### 1. Registration unique Person
 #### 2. Authorization
 #### 3. Two role using app with different opportunities
-#### 4. Creat, read, update, delete function  
+#### 4. Creat, read, update, delete, search function  
 ____
 ### Using App 
 ![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/s4.png)
