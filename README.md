@@ -20,6 +20,6 @@ ____
 ![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/s4.png)
 ![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/s6.png)
 ![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/s5.png)
-![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/s3.png)
-![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/s2.png)
 ![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/s1.png)
+![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/s2.png)
+![Start page of Application](https://github.com/bembel1993/imgForDiplom/blob/main/s3.png)
