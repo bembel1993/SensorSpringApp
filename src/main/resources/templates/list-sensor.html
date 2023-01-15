@@ -82,7 +82,7 @@
             <!--/*@thymesVar id="sensors" type="com.example.demo.controller"*/-->
             <tr th:each="sensor: ${sensors}">
                 <td align="right">
-                    <a href='' style='color:black'>
+                    <a th:href="@{/getFormForUpdate/{id}(id=${sensor.id})}" style='color:black'>
                         <span class='glyphicon glyphicon-pencil'></span>
                     </a>
                 </td>
@@ -105,7 +105,6 @@
 
                     <a th:href="@{/delete/{id}(id=${sensor.id})}" style='color:black'>
                     <span class='glyphicon glyphicon-remove'>
-
                     </span>
                     </a>
                 </td>

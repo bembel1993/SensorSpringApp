@@ -36,6 +36,13 @@ public class SimpleController {
     private PersonService personService;
 
     @GetMapping("/")
+    public String loginForm(Model model) {
+        Person person = new Person();
+        model.addAttribute("person", person);
+        return "login";
+    }
+
+    @GetMapping("/register")
     public String registrForm(Model model) {
         Person person = new Person();
         model.addAttribute("person", person);
@@ -67,6 +74,20 @@ public class SimpleController {
         Sensor sensor = new Sensor();
         model.addAttribute("sensor", sensor);
         return "sensor-form";
+    }
+
+    @GetMapping("/getFormForUpdate/{id}")
+    public String showFormForUpdate(@PathVariable("id") int id, Model model) {
+        Sensor sensor = sensorRepository.findById(id)
+                .orElseThrow(() -> new IllegalArgumentException("Invalid user Id:" + id));
+        model.addAttribute("sensor", sensor);
+        return "sensor-form-update";
+    }
+
+    @PostMapping("/update")
+    public String updateSensor(@ModelAttribute("sensor") Sensor sensor) {
+        sensorRepository.save(sensor);
+        return "redirect:/listSensor";
     }
 
     @RequestMapping(value = "/saveSensor", method = RequestMethod.POST)
